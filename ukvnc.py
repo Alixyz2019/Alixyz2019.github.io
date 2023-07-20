@@ -26,8 +26,7 @@ def format_address(address):
     return ', '.join(address_lines)
 
 def main():
-
-    vat_number = st.text_input('**Enter VAT Number: **')
+    vat_number = st.text_input('**Enter VAT Number:**')
     if st.button('Validate VAT Number'):
         if vat_number:
             st.text(f'Checking VAT Number: {vat_number}')
